@@ -35,6 +35,17 @@ bash install.sh
 The installer copies skills to `~/.claude/skills/` and rules to `~/.claude/rules/`.
 Copy `CLAUDE.md` to your project root to activate BCG register directives.
 
+### Testing in Isolation (without touching your existing ~/.claude setup)
+
+```bash
+mkdir -p /tmp/claude-kit-test
+HOME=/tmp/claude-kit-test bash install.sh
+HOME=/tmp/claude-kit-test claude
+```
+
+This gives a completely clean `~/.claude/` — no existing skills, settings, or CLAUDE.md.
+Only the kit's 4 skills and rules are loaded. When done: `rm -rf /tmp/claude-kit-test`.
+
 ### Mode B -- Browser (ChatGPT, Claude.ai, no installation)
 
 1. Open `prompts/research-agent.md` and copy the entire file contents

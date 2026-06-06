@@ -137,11 +137,11 @@ def export_to_word(output: ResearchOutput, filepath: str) -> str:
     for src in output.sources:
         p = doc.add_paragraph()
         p.paragraph_format.left_indent = Cm(0.5)
-        p.add_run(f'{src.name}  —  ')
         if src.url:
-            _add_hyperlink(p, src.url, src.url)
+            _add_hyperlink(p, src.name, src.url)
         else:
-            flag = p.add_run('출처 불명확 — 추가 검증 필요')
+            p.add_run(src.name)
+            flag = p.add_run('  —  출처 불명확 — 추가 검증 필요')
             flag.font.color.rgb = RGBColor(0xDC, 0x26, 0x26)
 
     bcg_p = doc.add_paragraph()

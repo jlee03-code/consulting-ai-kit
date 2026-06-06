@@ -13,7 +13,7 @@ All output defaults to Korean consultant register: assertive, number-anchored, a
 | `skills/consult-research/` | TAM/SAM/SOM sizing + competitive analysis |
 | `skills/finance-model/` | DCF / P&L / sensitivity (Excel MCP or text tables) |
 | `skills/karpathy-guidelines/` | Reasoning guardrails (verbatim, MIT) |
-| `prompts/research-agent.md` | Mode B: paste into ChatGPT for research tasks |
+| `prompts/research-agent-openai.md` | Mode B: paste into ChatGPT for research tasks |
 | `prompts/finance-agent-openai.md` | Mode B: paste into ChatGPT for financial modeling |
 | `prompts/finance-agent-claude.md` | Mode B: paste into Claude.ai for financial modeling |
 | `CLAUDE.md` | Session-level directives -- copy to your project root |
@@ -54,7 +54,7 @@ Only the kit's 4 skills and rules are loaded. When done: `rm -rf /tmp/claude-kit
 3. The agent will ask for context, then produce BCG-register Korean output
 
 Two prompts available:
-- `prompts/research-agent.md` -- market sizing, competitive analysis
+- `prompts/research-agent-openai.md` -- market sizing, competitive analysis (ChatGPT)
 - `prompts/finance-agent.md` -- DCF, P&L, sensitivity tables
 
 ---

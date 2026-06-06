@@ -17,8 +17,9 @@ KOL, SKU, EPC, WACC, FCF, EBITDA). 이 약어들은 절대 번역하지 않는�
 
 ## Two Browser Prompts (Mode B)
 
-- prompts/research-agent.md  -- ChatGPT GPT #1 (리서치)
-- prompts/finance-agent.md   -- ChatGPT GPT #2 (재무 모델링)
+- prompts/research-agent.md       -- ChatGPT or Claude.ai (리서치)
+- prompts/finance-agent-openai.md -- ChatGPT (재무 모델링)
+- prompts/finance-agent-claude.md -- Claude.ai (재무 모델링)
 Paste as first message in a fresh chat. No installation required.
 
 ---

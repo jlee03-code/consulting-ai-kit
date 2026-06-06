@@ -14,7 +14,8 @@ All output defaults to Korean consultant register: assertive, number-anchored, a
 | `skills/finance-model/` | DCF / P&L / sensitivity (Excel MCP or text tables) |
 | `skills/karpathy-guidelines/` | Reasoning guardrails (verbatim, MIT) |
 | `prompts/research-agent.md` | Mode B: paste into ChatGPT for research tasks |
-| `prompts/finance-agent.md` | Mode B: paste into ChatGPT for financial modeling |
+| `prompts/finance-agent-openai.md` | Mode B: paste into ChatGPT for financial modeling |
+| `prompts/finance-agent-claude.md` | Mode B: paste into Claude.ai for financial modeling |
 | `CLAUDE.md` | Session-level directives -- copy to your project root |
 
 ---

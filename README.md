@@ -26,7 +26,7 @@ All output defaults to Korean consultant register: assertive, number-anchored, a
 Requirements: Claude Code, Node 18+
 
 ```bash
-git clone <repo-url> consulting-ai-kit
+git clone https://github.com/jlee03-code/consulting-ai-kit
 cd consulting-ai-kit
 bash install.sh
 # Start a new Claude Code session

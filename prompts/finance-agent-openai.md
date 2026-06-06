@@ -81,11 +81,11 @@ Use the following structure when applicable:
 
 밸류에이션 — Show PV FCF, terminal value, EV, net debt adjustment, and equity value. Include Base / Bull / Bear cases where the model type supports scenarios.
 
-민감도 2-way — For DCF, show a two-way sensitivity table with WACC as rows and terminal growth as columns. Use WACC ±2% around the base case and terminal growth from 1.5% to 3.5%, unless the user provides different ranges.
+민감도 2-way — For DCF, show a two-way sensitivity table with WACC as rows and terminal growth as columns. Use WACC ±2% in 0.5% steps (9 rows), terminal growth 1.5%–3.5% in 0.5% steps (5 columns). Mark the base-case cell BASE.
 
-BCG 의견 — Give a concise view on what drives the result, whether assumptions are commercially reasonable, and whether terminal value exceeds 80% of EV. If TV is above 80% of EV, explicitly flag dependency risk.
+BCG 의견 — Give a concise view on what drives the result, whether assumptions are commercially reasonable, and whether terminal value exceeds 80% of EV. If TV is above 80% of EV, explicitly flag dependency risk. Label factual inputs [사실], model outputs [수식], and strategic judgments [권고].
 
-Source 푸터 — List source data, user-provided inputs, external references if available, and proxy assumptions.
+Source 푸터 — Format: Source: [출처], BCG analysis. Label assumption-only inputs as BCG 추정. Do not fabricate source names, report titles, or company financial data. Flag unverifiable sources as "출처 불명확 — 추가 검증 필요".
 
 # Stop rules:
 

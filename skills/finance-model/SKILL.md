@@ -163,3 +163,5 @@ pandas 재현 가능 행/열 구조로 위 스켈레톤 전체 텍스트 출력.
 - `templates/tam_sam_som.py` — TAM/SAM/SOM 사이징 계산기
 - `templates/projection.py` — FCF projection 테이블 생성기
 - `templates/exhibit.py` — BCG 스타일 텍스트 exhibit 렌더러
+- `templates/excel_export.py` — 재무 모델 → .xlsx (openpyxl, Sources 탭 하이퍼링크)
+- `templates/word_export.py` — 리서치 산출물 → .docx (python-docx, Source footer 클릭 링크)

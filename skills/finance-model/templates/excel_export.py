@@ -181,7 +181,7 @@ def export_to_excel(output: FinanceOutput, filepath: str) -> str:
     _add_valuation_sheet(wb, output)
     _add_sensitivity_sheet(wb, output)
     _add_opinion_sheet(wb, output)
-    _add_sources_sheet(wb, output)
+    _add_sources_sheet(wb, output.sources)
 
     wb.save(filepath)
     return filepath

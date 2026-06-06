@@ -37,6 +37,8 @@ bash install.sh
 The installer copies skills to `~/.claude/skills/` and rules to `~/.claude/rules/`.
 Copy `CLAUDE.md` to your project root to activate BCG register directives.
 
+**On Windows?** See [WINDOWS_SETUP.md](WINDOWS_SETUP.md) for a step-by-step guide — no Git or bash required.
+
 ### Testing in Isolation (without touching your existing ~/.claude setup)
 
 ```bash
@@ -54,10 +56,11 @@ Only the kit's 4 skills and rules are loaded. When done: `rm -rf /tmp/claude-kit
 2. Paste as the **first message** in a fresh ChatGPT or Claude.ai chat
 3. The agent will ask for context, then produce BCG-register Korean output
 
-Two prompts available:
+Four prompts available:
 - `prompts/research-agent-openai.md` -- market sizing, competitive analysis (ChatGPT)
 - `prompts/research-agent-claude.md` -- market sizing, competitive analysis (Claude.ai)
-- `prompts/finance-agent.md` -- DCF, P&L, sensitivity tables
+- `prompts/finance-agent-openai.md` -- DCF, P&L, sensitivity tables (ChatGPT)
+- `prompts/finance-agent-claude.md` -- DCF, P&L, sensitivity tables (Claude.ai)
 
 ---
 

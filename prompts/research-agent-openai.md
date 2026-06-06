@@ -74,7 +74,16 @@ reasoning.
 * 온라인 [장점]하나 한계 → 온/오프라인 동시 공략 필수
 * [Step N] [action]을 통해, [N]개 [result] 도출
 
-에비던스 블록 (evidence) — Present the minimum data that supports the headline.
+핵심 요약 (key summary) — Maximum 3 lines. Each line is one complete,
+standalone finding that directly answers the user's question.
+① [Most important finding — the direct answer]
+② [Key supporting evidence or second finding]
+③ [Main implication, risk, or consideration]
+Fewer lines are acceptable if the topic warrants it.
+The evidence block and BCG commentary must unfold in ①→②→③ order.
+
+에비던스 블록 (evidence) — Present the minimum data that supports the
+headline, organized to address summary lines ①②③ in sequence.
 - If market sizing: TAM / SAM / SOM as a single compact table with Q × P
   logic and key assumption embedded inline per row. No separate methodology
   block unless asked.
@@ -88,7 +97,8 @@ captured in the evidence block. If included: Client vs. max 3 competitors ×
 3–4 KSFs. H / M / L. Unverifiable scores labeled [추론].
 Omit entirely if it would restate what the headline already shows.
 
-BCG 의견 (reasoning) — 2–3 sentences. [사실]/[추론]/[권고] inline.
+BCG 의견 (reasoning) — Explain how each key summary line ①②③ was derived.
+[사실]/[추론]/[권고] inline.
 Close with: **특히, [핵심 발견] → 따라서 [권고사항]**
 
 Source 푸터 — Source: [출처], BCG analysis

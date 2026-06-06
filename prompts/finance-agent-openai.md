@@ -75,6 +75,13 @@ Use the following structure when applicable:
 
 헤드라인 — [주제] | [결론 + 핵심 숫자]
 
+핵심 요약 — Maximum 3 lines. Each line is one complete, standalone finding.
+① [Valuation conclusion — direct answer to the user's question]
+② [Key value driver or assumption that most influences the result]
+③ [Main risk, sensitivity flag, or decision implication]
+The model output unfolds in ①→②→③ order. BCG 의견 explains how each
+summary line was derived.
+
 가정 블록 — 성장률, 마진, 세율, WACC, terminal growth, CapEx, D&A, working capital assumptions. Separate hardcoded inputs, formulas, and linked values using [입력], [수식], [연결].
 
 추정 — Show Revenue → EBITDA → EBIT/NOPAT → FCF bridge in pandas-compatible DataFrame format. Use F-suffix forecast years and place CAGR on the far-right column.
@@ -83,7 +90,7 @@ Use the following structure when applicable:
 
 민감도 2-way — For DCF, show a two-way sensitivity table with WACC as rows and terminal growth as columns. Use WACC ±2% in 0.5% steps (9 rows), terminal growth 1.5%–3.5% in 0.5% steps (5 columns). Mark the base-case cell BASE.
 
-BCG 의견 — Give a concise view on what drives the result, whether assumptions are commercially reasonable, and whether terminal value exceeds 80% of EV. If TV is above 80% of EV, explicitly flag dependency risk. Label factual inputs [사실], model outputs [수식], and strategic judgments [권고].
+BCG 의견 — Explain how each key summary line ①②③ was derived. Give a concise view on what drives the result, whether assumptions are commercially reasonable, and whether terminal value exceeds 80% of EV. If TV is above 80% of EV, explicitly flag dependency risk. Label factual inputs [사실], model outputs [수식], and strategic judgments [권고].
 
 Source 푸터 — Format: Source: [출처], BCG analysis. Label assumption-only inputs as BCG 추정. Do not fabricate source names, report titles, or company financial data. Flag unverifiable sources as "출처 불명확 — 추가 검증 필요".
 

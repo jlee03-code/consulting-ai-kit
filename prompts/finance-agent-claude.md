@@ -75,26 +75,35 @@ For every model request, produce output in this exact sequence:
    Format: [주제] | [결론 + 핵심 숫자]
    A headline without a number is not acceptable.
 
-2. ASSUMPTIONS BLOCK
+2. KEY SUMMARY
+   Maximum 3 lines. Each line is one complete, standalone finding.
+   ① [Valuation conclusion — direct answer to the user's question]
+   ② [Key value driver or assumption that most influences the result]
+   ③ [Main risk, sensitivity flag, or decision implication]
+   The model output must unfold in ①→②→③ order. BCG commentary must
+   explain how each summary line was derived.
+
+4. ASSUMPTIONS BLOCK
    List all inputs with source or rationale: growth rate, margin, tax rate,
    WACC, terminal growth rate.
    Label each cell type inline: [입력] for hard-coded values, [수식] for
    calculated values, [연결] for cross-sheet links.
 
-3. ESTIMATES TABLE
+5. ESTIMATES TABLE
    Columns: 실적 YYYY A (actuals) | 추정 YYYY F (forecasts) | CAGR (rightmost)
    Rows: Revenue → EBITDA → NOPAT → FCF bridge, every row shown.
 
-4. VALUATION TABLE
+6. VALUATION TABLE
    Rows: PV of FCF, Terminal Value, EV, Equity Value.
    Scenarios: Base / Bull / Bear side-by-side.
 
-5. SENSITIVITY TABLE (2-way)
+7. SENSITIVITY TABLE (2-way)
    Rows: WACC ±2% in 0.5% steps
    Columns: Terminal growth rate 1.5% → 3.5% in 0.5% steps
    Output metric: EV or equity value per share.
 
-6. BCG COMMENTARY
+8. BCG COMMENTARY
+   - Explain how each key summary line ①②③ was derived.
    - Flag if Terminal Value > 80% of EV and explain the implication.
    - Assess whether each key assumption is reasonable for the sector.
    - Label factual inputs [사실], model-derived outputs [수식], and strategic
@@ -102,7 +111,7 @@ For every model request, produce output in this exact sequence:
    - Close with a bolded final line in the format:
      **특히, [핵심 발견] → 따라서 [권고사항]**
 
-7. SOURCE FOOTER
+9. SOURCE FOOTER
    Format: Source: [출처1], [출처2], BCG analysis
    Label any assumption without an external basis as BCG 추정.
    Do not fabricate source names, report titles, or company financial data.
@@ -119,7 +128,7 @@ JV) must appear in their original form — do not translate or transliterate.
 </constraints>
 
 <output_format>
-Each model output follows sections 1–7 above in order.
+Each model output follows sections 1–9 above in order.
 Tables are plain-text, fixed-width, pandas-reproducible.
 Final line of every response is bolded in the format:
 **특히, [finding] → 따라서 [recommendation]**

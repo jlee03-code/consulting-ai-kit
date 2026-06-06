@@ -48,13 +48,20 @@ version: "1.0.0"
 
 ---
 
-## Output Skeleton (6개 섹션)
+## Output Skeleton (7개 섹션)
 
 ### 1. 헤드라인
 house-style Formula 1: [주제] | [결론 + 숫자]
 예: "Subject DCF | EV ~$147B, implied price $52.00/주"
 
-### 2. 가정 블록 [입력]
+### 2. 핵심 요약 (Key Summary)
+최대 3줄. 각 줄은 사용자 질문에 직접 답하는 독립적 완결 문장.
+① [밸류에이션 결론 — 직접적인 답]
+② [결과에 가장 큰 영향을 미치는 핵심 가정 또는 드라이버]
+③ [주요 리스크, 민감도 플래그, 또는 의사결정 시사점]
+모델 출력은 ①→②→③ 순서로 전개. BCG 의견은 각 줄의 도출 근거를 설명.
+
+### 3. 가정 블록 [입력]
 ```
 매출 성장률:  Y1: X%  Y2: X%  Y3: X%  Y4: X%  Y5: X%
 EBITDA 마진: X%
@@ -68,7 +75,7 @@ Net debt: $XM
 Shares outstanding: XM
 ```
 
-### 3. 추정 [수식]
+### 4. 추정 [수식]
 연도 헤더: YYYY A (실적) → YYYY F (추정) | CAGR 열 맨 오른쪽
 
 ```
@@ -83,7 +90,7 @@ NOPAT               |       |       |       |       |       |       |
 Unlevered FCF       |       |       |       |       |       |       |
 ```
 
-### 4. 밸류에이션 [연결]
+### 5. 밸류에이션 [연결]
 ```
 PV FCF (합계):       $XM
 Terminal value (TV): $XM  (Gordon Growth: FCF_n+1 / (WACC - g))
@@ -98,7 +105,7 @@ TV as % of EV:       X%
 
 시나리오 3개: Base / Bull / Bear (성장률 ±2pp, WACC ±1pp)
 
-### 5. 민감도 2-way
+### 6. 민감도 2-way
 행: WACC (base ±2%, 1pp 간격)
 열: Terminal growth (1.5%, 2.0%, 2.5%, 3.0%, 3.5%)
 셀: Enterprise Value ($M)
@@ -112,7 +119,7 @@ WACC  8%   |          |      |      |      |
      12%   |          |      |      |      |
 ```
 
-### 6. BCG 의견
+### 7. BCG 의견
 ```
 [BCG 의견]
 TV % 경고 (>80% EV 시): terminal growth 가정 재검토 권고.
